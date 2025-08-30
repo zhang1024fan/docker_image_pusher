@@ -1,7 +1,3 @@
-# Ansible
-docker.io/cytopia/ansible:2.17-tools
-docker.io/cytopia/ansible:2.16-tools
-
 # Terraform
 docker.io/hashicorp/terraform:1.9.7
 docker.io/hashicorp/terraform:1.8.5
