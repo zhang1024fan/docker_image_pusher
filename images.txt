@@ -1,112 +1,3 @@
-nginx
-#支持私库
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
-xhofe/alist:latest
-#支持指定架构
-# Kubernetes 1.31 版本镜像清单
-# 基于 Kubespray 项目生成，适用于部署 K8s 1.31 集群
-# 生成时间: $(date '+%Y-%m-%d %H:%M:%S')
-
-# ======================================================
-# Kubernetes 核心镜像 (K8s 1.31.x)
-# ======================================================
-
-# Kubernetes 控制平面组件
-registry.k8s.io/kube-apiserver:v1.31.11
-registry.k8s.io/kube-controller-manager:v1.31.11
-registry.k8s.io/kube-scheduler:v1.31.11
-registry.k8s.io/kube-proxy:v1.31.11
-
-# etcd 存储 (兼容K8s 1.31)
-quay.io/coreos/etcd:v3.5.22
-
-# Pause 容器 (Pod 基础设施容器)
-registry.k8s.io/pause:3.10
-
-# ======================================================
-# 网络组件镜像 (Calico 默认)
-# ======================================================
-
-# Calico 网络插件 (推荐版本)
-quay.io/calico/node:v3.29.5
-quay.io/calico/cni:v3.29.5
-quay.io/calico/kube-controllers:v3.29.5
-
-# Calico Typha (大规模集群使用)
-quay.io/calico/typha:v3.29.5
-
-# Calico API Server (可选)
-quay.io/calico/apiserver:v3.29.5
-
-# 其他网络插件选项
-# Flannel
-docker.io/flannel/flannel:v0.26.7
-docker.io/flannel/flannel-cni-plugin:v1.7.1-flannel1
-
-# Cilium (可选)
-quay.io/cilium/cilium:v1.17.7
-quay.io/cilium/operator:v1.17.7
-
-# Kube-router (可选)
-docker.io/cloudnativelabs/kube-router:v2.1.1
-
-# Multus CNI (多网络接口)
-ghcr.io/k8snetworkplumbingwg/multus-cni:v4.2.2
-
-# ======================================================
-# DNS 组件
-# ======================================================
-
-# CoreDNS (DNS 服务)
-registry.k8s.io/coredns/coredns:v1.11.3
-
-# NodeLocal DNSCache
-registry.k8s.io/dns/k8s-dns-node-cache:1.25.0
-
-# DNS 自动扩缩容
-registry.k8s.io/cpa/cluster-proportional-autoscaler:v1.8.8
-
-# ======================================================
-# 负载均衡器镜像
-# ======================================================
-
-# Nginx 负载均衡 (本地 API 服务器)
-docker.io/library/nginx:1.28.0-alpine
-
-# HAProxy 负载均衡 (可选)
-docker.io/library/haproxy:3.1.7-alpine
-
-# Kube-VIP (VIP 管理)
-ghcr.io/kube-vip/kube-vip:v0.8.9
-
-# ======================================================
-# 存储组件 (CSI 驱动)
-# ======================================================
-
-# CSI 通用组件
-registry.k8s.io/sig-storage/csi-attacher:v3.3.0
-registry.k8s.io/sig-storage/csi-provisioner:v3.0.0
-registry.k8s.io/sig-storage/csi-resizer:v1.3.0
-registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.4.0
-registry.k8s.io/sig-storage/livenessprobe:v2.5.0
-registry.k8s.io/sig-storage/csi-snapshotter:v5.0.0
-
-# 快照控制器
-registry.k8s.io/sig-storage/snapshot-controller:v7.0.2
-
-# 本地存储提供者
-registry.k8s.io/sig-storage/local-volume-provisioner:v2.5.0
-docker.io/rancher/local-path-provisioner:v0.0.24
-
-# 云平台存储驱动
-registry.k8s.io/provider-os/cinder-csi-plugin:v1.30.0  # OpenStack
-docker.io/amazon/aws-ebs-csi-driver:v0.5.0  # AWS
-registry.k8s.io/cloud-provider-gcp/gcp-compute-persistent-disk-csi-driver:v1.9.2  # GCP
-mcr.microsoft.com/k8s/csi/azuredisk-csi:v1.10.0  # Azure
-
-# ======================================================
-# Ingress 控制器
-# ======================================================
 
 # Nginx Ingress 控制器
 registry.k8s.io/ingress-nginx/controller:v1.12.1
@@ -115,66 +6,33 @@ registry.k8s.io/ingress-nginx/opentelemetry:v20230721-3e2062ee5
 
 # AWS ALB Ingress (可选)
 docker.io/amazon/aws-alb-ingress-controller:v1.1.9
-
-# ======================================================
-# 证书管理
-# ======================================================
-
 # Cert-Manager
 quay.io/jetstack/cert-manager-controller:v1.15.3
 quay.io/jetstack/cert-manager-cainjector:v1.15.3
 quay.io/jetstack/cert-manager-webhook:v1.15.3
-
-# ======================================================
-# 监控组件
-# ======================================================
-
 # Metrics Server
 registry.k8s.io/metrics-server/metrics-server:v0.8.0
-
 # Node Feature Discovery
 registry.k8s.io/nfd/node-feature-discovery:v0.16.4
-# ======================================================
 # 服务网格与负载均衡
-# ======================================================
 # MetalLB 负载均衡
 quay.io/metallb/speaker:v0.13.9
 quay.io/metallb/controller:v0.13.9
-# ======================================================
 # 管理工具
-# ======================================================
 # Kubernetes Dashboard (可选)
 docker.io/kubernetesui/dashboard:v2.7.0
 docker.io/kubernetesui/metrics-scraper:v1.0.8
 # Registry 私有镜像仓库
 docker.io/library/registry:2.8.1
-# ======================================================
 # 网络检查工具 (可选)
-# =====================================================
 # Netchecker (网络连通性测试)
 docker.io/mirantis/k8s-netchecker-agent:v1.2.2
 docker.io/mirantis/k8s-netchecker-server:v1.2.2
-# ======================================================
 # ArgoCD (GitOps 可选)
-# ======================================================
 # ArgoCD 组件
 quay.io/argoproj/argocd:v2.14.5
-# ======================================================
-# 说明
-# ======================================================
-# 这个镜像清单包含了部署 Kubernetes 1.31 集群所需的所有核心镜像
-# 镜像分类:
-# 1. 必需镜像: Kubernetes 核心组件、etcd、pause、网络插件、CoreDNS
-# 2. 推荐镜像: 负载均衡器、CSI 驱动、Ingress 控制器、证书管理
-# 3. 可选镜像: 监控、管理工具、服务网格等
 
-# 运维开发基础镜像库清单
-# 适用于私有仓库镜像同步
-# 生成时间: $(date '+%Y-%m-%d %H:%M:%S')
-
-# ======================================================
 # 操作系统基础镜像
-# ======================================================
 
 # Ubuntu LTS 版本
 docker.io/library/ubuntu:24.04
