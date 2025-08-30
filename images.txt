@@ -1,26 +1,13 @@
-# Terraform
-docker.io/hashicorp/terraform:1.9.7
-docker.io/hashicorp/terraform:1.8.5
-
-# Vault
-docker.io/hashicorp/vault:1.17.6
-docker.io/hashicorp/vault:1.16.9
-
-
-# MinIO
-docker.io/minio/minio:RELEASE.2024-10-29T09-49-05Z
-docker.io/minio/mc:RELEASE.2024-10-29T16-01-48Z
-
-# Rook Ceph
-docker.io/rook/ceph:v1.15.4
-quay.io/ceph/ceph:v18.2.4
-
-
-# Istio
-docker.io/istio/pilot:1.23.2
-docker.io/istio/proxyv2:1.23.2
-
-# Linkerd
-ghcr.io/linkerd/controller:stable-2.14.10
-ghcr.io/linkerd/proxy:stable-2.195.0
-
+registry.k8s.io/kube-apiserver:v1.31.0
+registry.k8s.io/kube-controller-manager:v1.31.0
+registry.k8s.io/kube-scheduler:v1.31.0
+registry.k8s.io/kube-proxy:v1.31.0
+registry.k8s.io/etcd:3.5.15-0
+docker.io/calico/cni:v3.28.0
+docker.io/calico/node:v3.28.0
+docker.io/calico/kube-controllers:v3.28.0
+quay.io/tigera/operator:v1.34.3
+registry.k8s.io/coredns/coredns:v1.11.1
+registry.k8s.io/pause:3.10
+registry.k8s.io/metrics-server/metrics-server:v0.7.1
+registry.k8s.io/ingress-nginx/controller:v1.8.2
