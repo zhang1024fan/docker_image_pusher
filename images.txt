@@ -1,11 +1,11 @@
- - quay.io/tigera/operator:v1.34.3
-  - quay.io/tigera/cni:v3.28.1
-  - quay.io/tigera/node:v3.28.1
-  - quay.io/tigera/typha:v3.28.1
-  - quay.io/tigera/kube-controllers:v3.28.1
-  - quay.io/tigera/pod2daemon-flexvol:v3.28.1
-  - quay.io/tigera/apiserver:v3.28.1
-  - quay.io/calico/csi:v3.28.1
-  - quay.io/calico/node-driver-registrar:v3.28.1
-  - docker.io/flannel/flannel:v0.25.5
-  - docker.io/flannel/flannel-cni-plugin:v1.4.0-flannel1
+quay.io/tigera/operator:v1.34.3
+quay.io/tigera/cni:v3.28.1
+quay.io/tigera/node:v3.28.1
+quay.io/tigera/typha:v3.28.1
+quay.io/tigera/kube-controllers:v3.28.1
+quay.io/tigera/pod2daemon-flexvol:v3.28.1
+quay.io/tigera/apiserver:v3.28.1
+quay.io/calico/csi:v3.28.1
+quay.io/calico/node-driver-registrar:v3.28.1
+docker.io/flannel/flannel:v0.25.5
+docker.io/flannel/flannel-cni-plugin:v1.4.0-flannel1
