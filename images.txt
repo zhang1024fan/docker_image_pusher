@@ -1,1 +1,5 @@
-registry.k8s.io/pause:3.6
+docker.io/calico/cni:v3.28.0
+docker.io/calico/cni:v3.28.0
+docker.io/calico/node:v3.28.0
+docker.io/calico/node:v3.28.0
+docker.io/calico/kube-controllers:v3.28.0
