@@ -1,5 +1,1 @@
-docker.io/calico/cni:v3.28.0
-docker.io/calico/cni:v3.28.0
-docker.io/calico/node:v3.28.0
-docker.io/calico/node:v3.28.0
-docker.io/calico/kube-controllers:v3.28.0
+busybox:1.35
