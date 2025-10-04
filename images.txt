@@ -1,2 +1,5 @@
-alpine:latest
-golang:1.24-alpine 
+prom/pushgateway:v1.6.1
+prom/prometheus:v2.47.0
+mysql:8.0.33
+redis:7.0-alpine
+nginx:1.24-alpine
