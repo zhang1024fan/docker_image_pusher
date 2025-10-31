@@ -1,2 +1,1 @@
-docker.io/alpine:latest
-docker.io/ubuntu:20.04
+xuxueli/xxl-job-admin
