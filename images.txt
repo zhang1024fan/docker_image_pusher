@@ -1,1 +1,1 @@
-mayfly-go:latest
+ccr.ccs.tencentyun.com/mayfly/mayfly-go:latest
