@@ -1,1 +1,2 @@
-postgresql:latest
+docker.io/library/postgres:latest
+docker.io/library/postgres:15
