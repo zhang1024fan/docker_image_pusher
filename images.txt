@@ -1,1 +1,1 @@
-ccr.ccs.tencentyun.com/mayfly/mayfly-go:latest
+postgresql:latest
