@@ -1,1 +1,1 @@
-eclipse-temurin:11-jdk-jammy
+kuboard:v3
