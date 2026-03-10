@@ -1,2 +1,1 @@
-openjdk:11-jre
-eclipse-temurin:11-jre
+metrics-scraper:v1.0.8
