@@ -1,5 +1,1 @@
-mysql:8
-flashcatcloud/categraf:latest
-redis:6.2
-prom/prometheus:v2.55.1
-flashcatcloud/nightingale:latest
+victoriametrics/victoria-metrics:v1.79.12
