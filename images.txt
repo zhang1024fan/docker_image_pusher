@@ -1,3 +1,5 @@
-rustfs/rustfs:1.0.0-alpha.93
-minio/mc@sha256:95b5f3f7969a5c5a9f3a700ba72d5c84172819e13385aaf916e237cf111ab868
-traefik:v3.6.4
+pgvector/pgvector:pg18
+valkey/valkey@sha256:12ba4f45a7c3e1d0f076acd616cb230834e75a77e8516dde382720af32832d6d
+ghcr.io/formbricks/formbricks:latest
+ghcr.io/formbricks/hub:latest
+cubejs/cube:v1.6.6
