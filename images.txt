@@ -1,5 +1,4 @@
-pgvector/pgvector:pg18
-valkey/valkey@sha256:12ba4f45a7c3e1d0f076acd616cb230834e75a77e8516dde382720af32832d6d
-ghcr.io/formbricks/formbricks:latest
-ghcr.io/formbricks/hub:latest
-cubejs/cube:v1.6.6
+apache/kafka:4.0.0
+timberio/vector:latest-debian
+victoriametrics/victoria-metrics:latest
+victoriametrics/victoria-logs:latest
