@@ -1,4 +1,2 @@
-apache/kafka:4.0.0
-timberio/vector:latest-debian
-victoriametrics/victoria-metrics:latest
-victoriametrics/victoria-logs:latest
+vmagent:v1.147.0
+kube-state-metrics:v2.18.0
