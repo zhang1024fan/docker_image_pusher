@@ -1,2 +1,2 @@
-victoriametrics/vmagent:v1.147.0
-weiyigeek/kube-state-metrics:v2.18.0
+bitnami/kube-state-metrics:v2.18.0
+m.daocloud.io/registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.18.0
