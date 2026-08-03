@@ -1,1 +1,1 @@
-registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.18.0
+ openjdk:17-jre
