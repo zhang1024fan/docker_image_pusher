@@ -1,1 +1,1 @@
- docker.io/eclipse-temurin:17-jre
+ docker.io/lafyun/runtime-node-init:latest
