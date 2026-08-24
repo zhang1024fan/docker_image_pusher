@@ -1,1 +1,1 @@
- docker.io/lafyun/runtime-node-init:latest
+nacos/nacos-server:v2.2.3
