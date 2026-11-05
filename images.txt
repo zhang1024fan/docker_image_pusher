@@ -1,1 +1,2 @@
-nacos/nacos-server:v2.2.3
+zookeeper:3.8
+zookeeper:latest
